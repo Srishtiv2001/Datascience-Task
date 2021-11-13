@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<style>
+    body
+    {
+        background-color: black;
+        color: white;
+        padding-left:350px;
+        padding-top: 150px;
+    }
+    textarea {
+        background-color: black;
+        border:1px solid;
+        border-radius: 5px;
+        border-color: white;
+  resize: none;
+  color:white;
+}
+input[type="submit"]{
+  border: 1px solid white;
+  background-color: green;
+  color:white;
+  padding:10px;
+  margin-left: 200px;
+  border-radius: 5px;
+
+}
+</style>
+<body>
+    <form action = "/results" method = "post">
+        <h2>Enter blog contents for grammar check:</h2>
+        <textarea rows = "5" cols = "60" name = "description" maxlength="25000" autofocus>           
+        </textarea><br><br>
+        <input type = "submit" value = "submit" />
+     </form>    
+</body>
+</html>
