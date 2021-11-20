@@ -11,8 +11,8 @@
     {
         background-color: black;
         color: white;
-        padding-left:300px;
-        padding-top: 150px;
+        padding-left:150px;
+        padding-top: 20px;
     }
     input[type="submit"]{
   border: 1px solid white;
@@ -24,7 +24,7 @@
 
 }
 table {
-  width: 600px;
+  width: 1000px;
   /* border: 1px solid #000; */
 }
 th{
@@ -54,7 +54,7 @@ th{
         <th>Incorrect words:</th>
         <td>
         {% for i in dic['corrections'] %}
-        {{i['text']}},
+        {{i[0]['text']}},
         {% endfor %}
     </td>
     </tr>
